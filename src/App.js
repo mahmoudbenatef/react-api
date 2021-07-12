@@ -10,6 +10,7 @@ import {
 import ProductComponent from './components/ProductComponent';
 import { ProductDetails } from "./containers/ProductDetails"
 import { ProductListing } from "./containers/ProductListing"
+import YoutubeFormComponent from './components/YoutubeFormComponent';
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
             </Route>
             <Route exact path="/product-details/:id">
               <ProductDetails />
+            </Route>
+
+            <Route exact path="/youtube">
+              <YoutubeFormComponent />
             </Route>
           </Switch>
         </Router>
